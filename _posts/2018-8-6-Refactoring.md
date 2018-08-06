@@ -5,7 +5,7 @@ category: refactoring
 googlewebfonts: Roboto+Mono
 ---
 
-These are some of my notes I took while reading Martin Fowler's _Refactoring. Improving THE Design of Existing Code_.
+These are some of my notes I took while reading Martin Fowler's _Refactoring. Improving THE Design of Existing Code_. This I assume will be a multi part series. This post covers a few basic refactoring techniques. 
 
 While refactoring is synonymous to “code clean up” before you start cleaning a legacy system a good set of test cases is a prerequisite. Having a suite of test cases will keep two things in check.
 
