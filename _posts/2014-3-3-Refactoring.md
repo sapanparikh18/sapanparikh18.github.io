@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Martin Fowler's Refactoring. Improving THE Design of Existing Code.
+title: My nNotes from Martin Fowler's Refactoring. Improving THE Design of Existing Code.
 category: refactoring
 ---
 
 
-# Refactoring
+
 
 These are some of my notes I took while reading Martin Fowler's _Refactoring. Improving THE Design of Existing Code_.
 
