@@ -18,8 +18,8 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+  background: $white;
+  font: 18px/1.4 $Serif;
   color: $darkGray;
 }
 
@@ -31,11 +31,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+  font-family: $SansSerif;
+  color: $gray;
+  font-weight: medium;
 
-  line-height: 1.7;
+  line-height: 1.2;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -71,7 +71,7 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
@@ -117,6 +117,7 @@ img {
 
 .date {
   font-style: italic;
+  font-size: 0.7em;
   color: $gray;
 }
 
@@ -134,12 +135,12 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*********************/
@@ -194,7 +195,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $SansSerif;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -213,7 +214,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $SansSerif;
   font-size: 18px;
 
   @include mobile {
@@ -266,7 +267,7 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-size: 15px;
   }
 }
@@ -275,7 +276,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  //background-color: $lightGray;
 }
 
 footer {
@@ -283,7 +284,19 @@ footer {
   text-align: center;
 }
 
+// sharing buttons for facebook, twitter etc...
+@import "fontello-crux";
+//@import "share";
+//@import "sharingbuttons.io";
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+// ... Otherwise it really bloats up the top of the CSS file and makes it
+// difficult to find the start
 @import "highlights";
-@import "svg-icons";
+//@import "svg-icons";
+
+// youtube/vimeo embedd
+@import "video";
+
+// for iframes etc.
+@import "aspect-ratio";
