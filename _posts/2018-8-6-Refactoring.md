@@ -24,9 +24,6 @@ Following are a few refactoring methodologies you can use while working on a lar
 
 ### EXTRACT METHOD
 This refactoring method is the easiest to identify and perform. If in your code you are able to find a piece of code that changes only one variable then it may be best to move it to its own method and return the value of that variable. The variables which are not being changed but are part of the logic should be sent as parameters. Usual targets to extracting methods are logical code blocks like if, else, for loop etc. This way not only you are shortening the method but also decreasing the cognitive complexity of the overall method. Essentially, in the end, your code will be easier to understand and modify.
-```java
-public class 
-```
 
 ### MOVE METHOD
 You can use Move Method refactoring techniques in one of the following scenarios.
