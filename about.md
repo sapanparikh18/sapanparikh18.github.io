@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+My name is Sapan Parikh and I currently live in Ahmedabad, Gujarat, India.
 
-### More Information
+I did my M.S. in Computer Science from New Jersey Institute of Technology, Newark NJ. Here in an on campus job 
+I started my journey with Web Programming using Java, JSP, Oracle and Tomcat in 2006. Since then I have never looked back working with Java, Groovy, Gradle, Grails and numerous other technologies.
+Currently I am working with eClinicalWorks as a director where I lead projects involved with AI, DevOps and BDD. 
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Feel free to browse my stackoverflow timeline here 
+https://stackoverflow.com/users/story/779348
