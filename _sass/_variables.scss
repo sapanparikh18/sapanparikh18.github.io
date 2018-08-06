@@ -1,9 +1,3 @@
-
-//
-// VARIABLES
-//
-
-// Colors
 $blue: #4183C4;
 
 // Grays
@@ -18,6 +12,10 @@ $white: #fff;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+// google web fonts
+$Serif: 'Roboto Slab', serif;
+$SansSerif: 'Roboto', sans-serif;
+$Monospace: 'Roboto Mono', monospace;
 
 // Mobile breakpoints
 @mixin mobile {
