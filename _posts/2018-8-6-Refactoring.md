@@ -68,8 +68,8 @@ Collections should be handled differently if you are using Lists, Sets, Maps etc
 Also, returning entire collections exposes information about what may be going inside your class. So in cases like following.
 ```java
 public class Currency{
-    Map <String,String>symbolMap = new HashMap<>();
-    public Currency(){
+    private static Map <String,String>symbolMap = new HashMap<>();
+    private static populate(){
         symbolMap.put("USD","$");
         symbolMap.put("EUR","€");
         symbolMap.put("GBP","£");
@@ -79,6 +79,9 @@ public class Currency{
     }
     
     public Map<String,String> getSymbolMap(){
+        if(this.symbolMap.isEmpty()){
+            populate();
+        }
         return symbolMap;
     }
 }
@@ -87,9 +90,9 @@ public class Client{
     String code;
     String symbol;
     public  CurrencyClient(String code){
-        this.symbol = new Currency().getSymbolMap().get(code);
+        this.symbol = Currency.getSymbolMap().get(code);
         // Here I can do
-        new Currency().getSymbolMap().clear(); //you just gave someone access to your inner workings!
+        Currency.getSymbolMap().clear(); //you just gave someone access to your inner workings!
     }
 }
 
@@ -100,8 +103,8 @@ This should be rewritten as
 
 ```java
 public class Currency{
-    Map <String,String>symbolMap = new HashMap<>();
-    public Currency(){
+    private Map <String,String>symbolMap = new HashMap<>();
+    private static populate(){
         symbolMap.put("USD","$");
         symbolMap.put("EUR","€");
         symbolMap.put("GBP","£");
@@ -111,6 +114,9 @@ public class Currency{
     }
     
     public String getSymbol(String symbol){
+        if(symbolMap.isEmpty()){
+            populate();
+        }
         return symbolMap.get(symbol);
     }
 }
@@ -119,7 +125,7 @@ public class Client{
     String code;
     String symbol;
     public  CurrencyClient(String code){
-        this.symbol = new Currency().getSymbol(code);
+        this.symbol = Currency.getSymbol(code);
         this.code = code;
         
     }
