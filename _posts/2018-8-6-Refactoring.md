@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Refactoring Part-1
-category: refactoring
+category: Refactoring
 googlewebfonts: Roboto+Mono
 ---
 
