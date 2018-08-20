@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Refactoring - REPLACE TYPE CODE WITH SUBCLASSES
+title: Refactoring Part 2
 category: Refactoring
 googlewebfonts: Roboto+Mono
 ---
