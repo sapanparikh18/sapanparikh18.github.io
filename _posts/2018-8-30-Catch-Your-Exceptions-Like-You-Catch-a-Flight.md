@@ -30,7 +30,7 @@ try{
 ```
 
 In above example, `FileNotFoundException` is a checked exception and the code will not compile until it's caught. 
-In Java, any exception that does not inherit `java.lang.RuntimeException` or java.lang.Error` is a checked exception.
+In Java, any exception that does not inherit `java.lang.RuntimeException` or `java.lang.Error` is a checked exception.
  
 Now let's extend this example
 
