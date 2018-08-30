@@ -49,6 +49,8 @@ Now let's extend this example
 ```
 
 Here, reading the data using `fin` throws another checked exception, IOException, this exception usually means the file was found but the reading of it was interrupted because of some reason.
+
+
 Now if you were a developer with a foresight you may see that we are dividing an integer with a zero which can throw an exception, but the compiler does not seem to complain about this!
 This behavior is because `java.lang.ArithmeticException` is a subclass of `RuntimeException` and as the name suggests it is indeed a Runtime Exception! 
 But hey, now you know something can go wrong and you may want to change your code slightly like the following
