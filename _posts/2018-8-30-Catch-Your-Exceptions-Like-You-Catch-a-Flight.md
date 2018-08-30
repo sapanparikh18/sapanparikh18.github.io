@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Catch your exceptions like you'd catch a flight not fish
+title: Catch your exceptions like you'd catch a flight; not fish
 category: Java
 googlewebfonts: Roboto+Mono
 ---
