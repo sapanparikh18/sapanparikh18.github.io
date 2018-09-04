@@ -133,7 +133,7 @@ Let's discuss why these changes are not acceptable.
      System.out.println("Error while reading the file");
  } catch (ArithmeticException ae){
      System.out.println("To infinity and beyond");
- } catch (Exception ex) {
+ } catch (RuntimeException ex) {
      System.out.println("Unkown error occurred");
  }
  ``` 
