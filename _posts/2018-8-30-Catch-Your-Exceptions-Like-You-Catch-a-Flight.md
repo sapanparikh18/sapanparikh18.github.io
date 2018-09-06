@@ -143,6 +143,6 @@ Let's discuss why these changes are not acceptable.
 ## Conclusion  
  `Exception` should not be caught until not required by called methods. 
 
- The same rules also apply to throw exceptions, always throw specific exceptions, never throw `Exception` and finally you don't need to throw `RuntimeException` because all methods in Java throws `RuntimeException` implicitly.
+ The same rules also apply to throw exceptions, always throw specific exceptions, never throw `Exception` and finally you don't need to throw `RuntimeException`. All methods in Java throw `RuntimeException` implicitly.
  You can read about it in [https://medium.com/@sapanparikh18/understanding-sonar-squid-redundantthrowsdeclarationcheck-aka-13d86a380411](this) post  
    
